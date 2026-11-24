@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    >
+    {% if page.title and page.title != site.title %}
+      {% assign full_title = page.title | append: " - " | append: site.title %}
+    {% else %}
+      {% assign full_title = site.title %}
+    {% endif %}
+    {% assign summary = page.description | default: site.description %}
+    <title>{{ full_title }}</title>
     <meta
       name="description"
-      content="{{ page.description | default: site.description | default: page.title }}"
+      content="{{ summary }}"
+    >
+    <link
+      rel="canonical"
+      href="{{ page.url | absolute_url }}"
     >
     <meta
       property="og:title"
-      content="{{ page.title }} - {{ site.title }}"
+      content="{{ full_title }}"
     >
     <meta
       property="og:description"
-      content="{{ page.description | default: site.description | default: page.title }}"
+      content="{{ summary }}"
     >
     <meta
       property="og:type"
       content="website"
+    >
+    <meta
+      property="og:url"
+      content="{{ page.url | absolute_url }}"
     >
     {% if page.image %}
     <meta
@@ -35,9 +52,22 @@
       rel="stylesheet"
       href="{{ "/assets/css/main.css" | relative_url }}"
     >
-    {% feed_meta %}
+    {% include analytics.html %}
   </head>
-  <body class="bg-white text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100">
-    {{ content }}
+  <body class="flex min-h-screen flex-col bg-white font-sans text-neutral-900 antialiased dark:bg-neutral-950 dark:text-neutral-100">
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-white focus:px-4 focus:py-2 dark:focus:bg-neutral-900"
+    >
+      Skip to content
+    </a>
+    {% include nav.html %}
+    <main
+      id="main"
+      class="flex-1"
+    >
+      {{ content }}
+    </main>
+    {% include footer.html %}
   </body>
 </html>

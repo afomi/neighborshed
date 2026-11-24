@@ -1,22 +1,28 @@
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-# baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://neighborshed.app"
 baseurl: ""
 
-title: "Own Your Website" # the name of your site, e.g. ACME Corp.
+title: "NeighborShed"
 
-description: "A simple, modern template for building your own website."
+description: "An open social protocol for lending and borrowing among neighbors: the shared expectations that make neighborhood sharing work."
 
-permalink: /blog/:title/
+lang: "en-US"
+
+protocol_version: "0.1"
+protocol_status: "draft"
+
+repository: "https://github.com/afomi/neighborshed"
+
+ga4_measurement_id: "" # set to the GA4 measurement ID (G-...)
 
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
 
 exclude:
   - package.json
   - package-lock.json
-  - postcss.config.js
-  - tailwind.config.js
   - node_modules
   - Gemfile
   - Gemfile.lock
+  - README.md
+  - LICENSE
+  - assets/css/tailwind.css
