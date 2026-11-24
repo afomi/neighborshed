@@ -285,18 +285,18 @@
 }
 
 /* ==========================================================================
-   INK AND WASH
-   Drawings in the site's illustration style (design/ink-and-wash/).
+   DRAWINGS
+   Illustrations in the site's style (design/bold/).
    The drawing's white is transparent and multiplies onto the page.
    In dark mode it sits on a paper sheet, because black ink vanishes on black.
    ========================================================================== */
 
 @layer components {
-  .ink-wash img {
+  .drawing img {
     @apply h-auto w-full mix-blend-multiply;
   }
 
-  .ink-wash {
+  .drawing {
     @apply dark:rounded dark:bg-[#FBF8F2] dark:p-3;
   }
 }

@@ -1,0 +1,4 @@
+Use your image generation tool once to generate this image. Reply with only the path of the generated file and the model you used. Portrait 3:4 if you can choose.
+
+Image prompt:
+Loose black ink pen drawing with watercolor washes on pure white paper, two pigments only: a soft sap green and a pale rose pink. A neighbor, seen from behind so no face shows, pushing a push lawn mower across a freshly striped lawn. A low picket fence and a rose bush beyond. Lots of white paper, no background wash, no shadows. No faces, no text, no letters, no numbers.

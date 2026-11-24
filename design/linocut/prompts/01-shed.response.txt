@@ -1,0 +1,4 @@
+I'll generate the linocut once at landscape 4:3, then reply with only the file path and the model.
+
+images/garden-shed-linocut.jpg
+Imagine (image_gen; no model id was returned)

@@ -1,5 +1,8 @@
 # Ink and wash
 
+> Replaced on 2026-11-24 by the bold line style in `../bold/`, which reads better at phone size.
+> Kept for reference; the `assets/img/ink-wash/` files it lists have been removed from the site.
+
 NeighborShed's illustration style: loose black ink pen with watercolour washes in two garden pigments, on white paper.
 Adapted on 2026-11-24 from Qart's ink-and-wash recipe (qart `design/ink-and-wash/README.md`, chosen there 2026-11-10).
 The method is the same; the pigments and subjects are NeighborShed's own.
@@ -22,7 +25,7 @@ This folder is source material and is not published with the site (`design` is i
   One drawing per section at most; it sits beside the copy, never behind it.
 - On a phone the drawing follows the copy, so the words come first.
 - Alt text says what is drawn, plainly.
-- The two colour illustrations of the red mower (`assets/img/lawnmower.jpg`, `mowing-lawn.jpg`) predate this style and stay as they are.
+- The home page's mower pair was redrawn in this style on 2026-11-24; the earlier colour illustrations of the red mower are in git history.
 
 ## 1. Write the prompt
 
@@ -89,4 +92,9 @@ In dark mode it lays the drawing on a paper sheet (`#FBF8F2`), because black ink
 |---|---|---|
 | `generated/shed.jpg` → `assets/img/ink-wash/shed.webp` | A garden shed, doors open, roses over it: ladder, shovel, post-hole digger, hose, watering can, push mower. Home page hero | `prompts/01-shed.txt` |
 | `generated/over-the-fence.jpg` → `assets/img/ink-wash/over-the-fence.webp` | Two hands passing a trowel over a rose-lined picket fence (asked for a shovel; Grok drew a trowel). Home page, beside the Qart call to action | `prompts/02-over-the-fence.txt` |
-| `generated/returned.jpg` → `assets/img/ink-wash/returned.webp` | A returned step ladder at a front door, flowers tied on as thanks. Home page, closing row (desktop only) | `prompts/03-returned.txt` |
+| `generated/returned-light.jpg` → `assets/img/ink-wash/returned.webp` | A borrowed step ladder on a porch beneath a newly lit porch lantern, the bulb's box on its top step. Home page, closing row (desktop only). Replaces `generated/returned.jpg` (flowers tied to the ladder, `prompts/03-returned.txt`) | `prompts/11-returned-light.txt` |
+| `generated/mower-pair.jpg`, split into `mower-pair-idle.jpg` → `assets/img/ink-wash/mower-in-shed.webp` and `mower-pair-in-use.jpg` → `assets/img/ink-wash/mowing.webp` | One green gas mower at the same angle in two panels: idle beside a shed with a cobweb on its handle ("An item to share"), then pushed across a lawn by a neighbor in a straw sun hat ("Borrowing an Item") | `prompts/10-mower-pair.txt` |
+
+The mower pair is drawn as one item, from "used rarely" to "shared".
+Generating both scenes as two panels of one image keeps the mower identical; split the panels at the white gap, then key each half.
+Earlier tries are kept in `generated/` with their prompts (04 to 09): a reel mower first, then a gas mower drawn separately, which faced different ways.

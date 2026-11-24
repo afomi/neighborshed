@@ -1,0 +1,7 @@
+I'll generate the illustration once at the closest landscape ratio the tool offers, then reply with only the file path and model.
+
+The image tool is available. I'll check the generation guidance, then make the one image.
+
+images/hands-shovel-fence.jpg
+
+Imagine

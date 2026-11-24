@@ -1,0 +1,4 @@
+Use your image generation tool once to generate this image. Reply with only the path of the generated file and the model you used. Landscape 4:3 if you can choose.
+
+Image prompt:
+Two-colour linocut block print on warm cream paper: bold hand-carved black lines with flat areas of leaf green and rose pink, visible carving marks and a little ink texture, simple bold shapes that read clearly at a small size. Two hands passing a garden shovel over a low picket fence, one hand reaching from each side. Roses and leafy vines along the fence. Only hands and forearms are shown. Plain cream background, no shadows. No faces, no text, no letters, no numbers.

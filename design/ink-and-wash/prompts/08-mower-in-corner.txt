@@ -1,0 +1,4 @@
+Use your image generation tool once to generate this image. Reply with only the path of the generated file and the model you used. Portrait 3:4 if you can choose.
+
+Image prompt:
+Loose black ink pen drawing with watercolor washes on pure white paper, two pigments only: a soft sap green and a pale rose pink. A modern walk-behind gas lawn mower with an enclosed cutting deck, a small engine on top, four wheels and a grass catcher bag behind, painted a soft green, parked in the back corner of a wooden garden shed, facing the viewer: the front of the deck toward us, the handle and grass bag behind it. It looks rarely used, with a faint cobweb on the handle and a little dust, tucked beside a few stacked clay pots and a coiled hose. A small window lets in soft light. Lots of white paper, no background wash, no shadows. No people, no faces, no text, no letters, no numbers.

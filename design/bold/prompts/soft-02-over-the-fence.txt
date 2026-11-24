@@ -1,0 +1,4 @@
+Use your image generation tool once to generate this image. Reply with only the path of the generated file and the model you used. Landscape 4:3 if you can choose.
+
+Image prompt:
+Bold friendly illustration with thick black hand-inked outlines and flat fills in muted sage green and soft dusty rose used sparingly, with plenty of white left unfilled, gentle colours never bright or saturated, a little print texture, simple clear shapes that read well at a small size, on pure white paper. Two hands passing a garden shovel over a low white picket fence, one hand reaching from each side, one sleeve dusty rose and the other sage green. Roses and leafy vines along the fence. Only hands and forearms are shown, no faces. Plain white background, no shadows. No text, no letters, no numbers.

@@ -1,0 +1,4 @@
+Use your image generation tool once to generate this image. Reply with only the path of the generated file and the model you used. Portrait 3:4 if you can choose.
+
+Image prompt:
+Loose black ink pen drawing with watercolor washes on pure white paper, two pigments only: a soft sap green and a pale rose pink. An old-fashioned push reel lawn mower parked in the back corner of a wooden garden shed, facing the viewer: the blades and wheels toward us, the long handle angled back and up behind it. It looks rarely used, with a faint cobweb on the handle and a little dust, tucked beside a few stacked clay pots and a coiled hose. A small window lets in soft light. Lots of white paper, no background wash, no shadows. No people, no faces, no text, no letters, no numbers.

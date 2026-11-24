@@ -1,0 +1,4 @@
+Use your image generation tool once to generate this image. Reply with only the path of the generated file and the model you used. Portrait 3:4 if you can choose.
+
+Image prompt:
+Loose black ink pen drawing with watercolor washes on pure white paper, two pigments only: a soft sap green and a pale rose pink. A borrowed step ladder standing open on a front porch, just used to change the bulb in the porch light fixture beside the front door; the light now glows softly. A small box from the new bulb rests on the top step of the ladder. A doormat and a potted geranium on the porch. Lots of white paper, no background wash, no shadows. No people, no faces, no text, no letters, no numbers.

@@ -1,0 +1,4 @@
+Use your image generation tool once to generate this image. Reply with only the path of the generated file and the model you used. Landscape 4:3 if you can choose.
+
+Image prompt:
+Two-colour linocut block print on warm cream paper: bold hand-carved black lines with flat areas of leaf green and rose pink, visible carving marks and a little ink texture, simple bold shapes that read clearly at a small size. A garden shed with its doors open: inside, a step ladder, a shovel, a post-hole digger, a push lawn mower, a coiled hose and a watering can. Climbing roses and a few daisies around the door. Plain cream background, no shadows. No faces, no text, no letters, no numbers.

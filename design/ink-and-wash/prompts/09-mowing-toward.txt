@@ -1,0 +1,4 @@
+Use your image generation tool once to generate this image. Reply with only the path of the generated file and the model you used. Portrait 3:4 if you can choose.
+
+Image prompt:
+Loose black ink pen drawing with watercolor washes on pure white paper, two pigments only: a soft sap green and a pale rose pink. A man walking toward the viewer, pushing a modern walk-behind gas lawn mower with an enclosed cutting deck, a small engine on top, four wheels and a grass catcher bag behind, painted a soft green across a freshly striped lawn, the front of the mower toward us. A low picket fence and a rose bush behind him. His face is mostly shaded under a wide-brimmed sun hat and suggested with only a few loose lines. Lots of white paper, no background wash, no shadows. No text, no letters, no numbers.
