@@ -1,26 +1,25 @@
 ---
 layout: page
 title: "About"
-kicker: "Where this came from"
 permalink: /about/
 description: "Where the NeighborShed protocol came from, how it is stewarded in the open, how it is licensed, and what this site collects."
 lede: >-
   NeighborShed is an open, shared pattern for lending among neighbors.
-  It began among neighbors in Vacaville, California.
 ---
 
-## From an app to a protocol
+## An app and a protocol
 
-NeighborShed started as a small web app for lending tools between neighbors.
-Neighbors listed what was in their garage, asked to borrow, and tracked each loan from request to return.
-It also carried a city neighborhood program's equipment, with live counts of how many shovels or folding tables were free.
+NeighborShed began as a small app for lending tools between neighbors.
+Neighbors listed what was in their garage, asked to borrow, and kept track of each loan until it came home.
+It also served a city neighborhood program, showing how many shovels or folding tables were free.
 
-Running it taught a clear lesson.
-The hard part of neighborhood sharing is not the software.
-It is the shared understanding of what a good loan looks like: how to ask, when to say no, what to do when a blade breaks, and how to keep who borrowed what between the two people involved.
+The app gave people a simple way to share things.
+But the app was never what made sharing work.
+What made it work was the spirit of it: respect for each other's things, an honest heads-up, a thank-you, and a fair talk when something breaks.
+That is the part worth keeping, and the part any neighbor can practice, with or without an app.
 
-The app's lending features now live in [Qart](https://qart.app).
-This site keeps the understanding, written down so any app or group can use it.
+The app's lending lives on in [Qart](https://qart.app).
+This site holds the rest: the shared expectations, written down so any app, group or street can use them.
 
 ## Stewarded in the open
 

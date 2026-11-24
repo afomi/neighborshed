@@ -2,18 +2,36 @@
 
 /* ==========================================================================
    THEME
-   One brand color (shed orange) plus a neutral scale.
-   brand-500 is for fills and rules only: it is too light for text on white.
-   Use brand-700 for orange text on light backgrounds, brand-400 on dark ones.
+   Garden green, with a rose accent for blooms, plus a neutral scale.
+   brand-500 is for fills and rules: black text on it is 6.4:1, but it is too
+   light for text on white. Use brand-700 for green text on light backgrounds
+   (6.6:1), brand-400 on dark ones (8.9:1).
+   bloom is the floral accent, used sparingly: the pledge, the current step.
+   bloom-500 for rings and rules, bloom-700 for text on light, bloom-400 on dark.
    ========================================================================== */
 
 @theme {
-  --color-brand-50: #fff3ec;
-  --color-brand-100: #ffe2d1;
-  --color-brand-400: #ff7a3d;
-  --color-brand-500: #fd4f00;
-  --color-brand-700: #c23c00;
-  --color-brand-900: #5c1d00;
+  --color-brand-50: #f1f7ec;
+  --color-brand-100: #dcedcf;
+  --color-brand-400: #7bbf5a;
+  --color-brand-500: #5a9e3a;
+  --color-brand-700: #2e6a1f;
+  --color-brand-900: #16380e;
+
+  --color-bloom-50: #fdf1f5;
+  --color-bloom-100: #f9dce6;
+  --color-bloom-400: #e88aab;
+  --color-bloom-500: #d4517f;
+  --color-bloom-700: #a12a57;
+  --color-bloom-900: #4f1029;
+
+  /* Qart's own orange, used only where the page points to Qart. */
+  --color-qart-50: #fff3ec;
+  --color-qart-100: #ffe2d1;
+  --color-qart-400: #ff7a3d;
+  --color-qart-500: #fd4f00;
+  --color-qart-700: #c23c00;
+  --color-qart-900: #5c1d00;
 
   --color-neutral-50: oklch(0.98 0.00 0);
   --color-neutral-100: oklch(0.96 0.00 0);
@@ -236,7 +254,7 @@
   }
 
   .lc-step[data-state="current"] .lc-dot {
-    @apply border-brand-500 text-brand-700 ring-4 ring-brand-100 dark:text-brand-400 dark:ring-brand-900;
+    @apply border-bloom-500 text-bloom-700 ring-4 ring-bloom-100 dark:text-bloom-400 dark:ring-bloom-900;
   }
 
   /* From md up, the horizontal layout becomes a row: circles on one line,
@@ -263,5 +281,22 @@
 
   .lifecycle-horizontal .lc-branch {
     @apply md:mx-auto md:mt-2 md:border-t-2 md:border-l-0 md:pt-1 md:pl-0 md:text-center;
+  }
+}
+
+/* ==========================================================================
+   INK AND WASH
+   Drawings in the site's illustration style (design/ink-and-wash/).
+   The drawing's white is transparent and multiplies onto the page.
+   In dark mode it sits on a paper sheet, because black ink vanishes on black.
+   ========================================================================== */
+
+@layer components {
+  .ink-wash img {
+    @apply h-auto w-full mix-blend-multiply;
+  }
+
+  .ink-wash {
+    @apply dark:rounded dark:bg-[#FBF8F2] dark:p-3;
   }
 }

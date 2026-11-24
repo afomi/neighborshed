@@ -1,0 +1,4 @@
+Use your image generation tool once to generate this image. Reply with only the path of the generated file and the model you used. Landscape 4:3 if you can choose.
+
+Image prompt:
+Loose black ink pen drawing with watercolor washes on pure white paper, two pigments only: a soft sap green and a pale rose pink. Two hands passing a garden shovel over a low white picket fence, one hand reaching from each side. Roses and leafy vines grow along the fence. Only hands and forearms are shown. Lots of white paper, no background wash, no shadows. No faces, no text, no letters, no numbers.

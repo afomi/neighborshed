@@ -12,6 +12,7 @@ protocol_status: "draft"
 
 repository: "https://github.com/afomi/neighborshed"
 
+gtm_container_id: "GTM-P6FX793C" # Google Tag Manager container (GTM-...); leave empty to turn it off
 ga4_measurement_id: "" # set to the GA4 measurement ID (G-...)
 
 plugins:
@@ -26,3 +27,4 @@ exclude:
   - README.md
   - LICENSE
   - assets/css/tailwind.css
+  - design

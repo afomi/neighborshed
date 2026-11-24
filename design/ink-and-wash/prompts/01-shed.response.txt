@@ -1,0 +1,4 @@
+I'll generate the garden-shed drawing once at landscape 4:3, then reply with only the file path and model.
+
+images/garden-shed.jpg
+Imagine

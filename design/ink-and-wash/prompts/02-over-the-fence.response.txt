@@ -1,0 +1,4 @@
+I'll generate the drawing once at landscape 4:3, then reply with only the file path and the model.
+
+images/hands-shovel-fence.jpg
+Imagine

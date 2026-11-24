@@ -1,0 +1,4 @@
+Use your image generation tool once to generate this image. Reply with only the path of the generated file and the model you used. Landscape 4:3 if you can choose.
+
+Image prompt:
+Loose black ink pen drawing with watercolor washes on pure white paper, two pigments only: a soft sap green and a pale rose pink. A garden shed with its door open, drawn as a casual still life: inside, a step ladder, a shovel, a post-hole digger, a push lawn mower, a coiled hose and a watering can. Climbing roses and a few daisies grow around the door frame. Lots of white paper, no background wash, no shadows. No faces, no text, no letters, no numbers.
