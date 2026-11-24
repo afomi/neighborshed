@@ -1,7 +1,7 @@
 {% assign nav_links = "/protocol/|The protocol,/implement/|Implement it,/about/|About" | split: "," %}
 <header class="border-b border-neutral-200 dark:border-neutral-800">
   <nav
-    class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-x-8 gap-y-3 px-6 py-5"
+    class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-8 gap-y-2 px-6 py-3"
     aria-label="Main"
   >
     <a
@@ -9,7 +9,7 @@
       class="flex items-center gap-x-3 text-lg font-bold no-underline"
     >
       <img
-        class="h-8 w-8"
+        class="h-7 w-7"
         src="{{ "/assets/img/mark.svg" | relative_url }}"
         alt=""
         width="32"
@@ -17,7 +17,7 @@
       >
       <span>{{ site.title }}</span>
     </a>
-    <ul class="flex flex-wrap items-center gap-x-6 gap-y-2 text-base font-bold">
+    <ul class="flex flex-wrap items-center gap-x-5 gap-y-1 text-sm font-bold">
       {% for link in nav_links %}
         {% assign parts = link | split: "|" %}
         <li>

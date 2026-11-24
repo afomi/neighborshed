@@ -1,0 +1,71 @@
+{% comment %}
+  The life of a share, as a stepper: a line with a circle at each step.
+  Parameters:
+    current: the key of the current step (offer, ask, …, close).
+      Steps before it render as done, steps after it as upcoming.
+      Leave it out to show every step as upcoming.
+    layout: "horizontal" (a vertical list on small screens, a row from md up)
+      or "vertical" (always a vertical list).
+    label: the accessible name of the list.
+    show_conventions: true to list each step's conventions.
+  Works without JS: every step is a link to its protocol section.
+{% endcomment %}
+{% assign current_index = -1 %}
+{% for step in site.data.lifecycle %}
+  {% if step.key == include.current %}
+    {% assign current_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+<ol
+  class="lifecycle lifecycle-{{ include.layout | default: "vertical" }}"
+  aria-label="{{ include.label | default: "The life of a share" }}"
+>
+  {% for step in site.data.lifecycle %}
+    {% if current_index == -1 %}
+      {% assign state = "upcoming" %}
+    {% elsif forloop.index0 < current_index %}
+      {% assign state = "done" %}
+    {% elsif forloop.index0 == current_index %}
+      {% assign state = "current" %}
+    {% else %}
+      {% assign state = "upcoming" %}
+    {% endif %}
+    <li
+      class="lc-step"
+      data-state="{{ state }}"
+      data-step="{{ step.key }}"
+    >
+      <span
+        class="lc-line"
+        aria-hidden="true"
+      ></span>
+      <a
+        class="lc-link"
+        href="{{ "/protocol/" | relative_url }}#{{ step.anchor }}"
+        {% if state == "current" %}aria-current="step"{% endif %}
+      >
+        <span
+          class="lc-dot"
+          aria-hidden="true"
+        >
+          <span class="lc-num">{{ forloop.index }}</span>
+          <span class="lc-check">✓</span>
+        </span>
+        <span class="lc-text">
+          <span class="lc-name">{{ step.name }}</span>
+          <span class="lc-state sr-only">{% if include.current %}({% if state == "current" %}current step{% else %}{{ state }}{% endif %}){% endif %}</span>
+          <span class="lc-desc">{{ step.line }}</span>
+          {% if include.show_conventions %}
+          <span class="lc-conventions">{{ step.conventions }}</span>
+          {% endif %}
+        </span>
+      </a>
+      {% if step.branch %}
+      <a
+        class="lc-branch"
+        href="{{ "/protocol/" | relative_url }}#{{ step.branch_anchor }}"
+      >{{ step.branch }}</a>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ol>

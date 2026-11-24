@@ -2,3 +2,5 @@
 /node_modules/
 _site/
 assets/css/main.css
+# Local Claude Code session files (handoffs, settings): never published
+.claude/

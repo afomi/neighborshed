@@ -86,19 +86,19 @@
 
 @layer components {
   .doc {
-    @apply text-lg/8 text-neutral-800 dark:text-neutral-200;
+    @apply text-base/7 text-neutral-800 dark:text-neutral-200;
   }
 
   .doc h2 {
-    @apply mt-16 mb-4 border-t border-neutral-200 pt-10 text-3xl font-bold tracking-tight text-neutral-950 dark:border-neutral-800 dark:text-white;
+    @apply mt-10 mb-3 border-t border-neutral-200 pt-6 text-2xl font-bold tracking-tight text-neutral-950 dark:border-neutral-800 dark:text-white;
   }
 
   .doc h3 {
-    @apply mt-10 mb-2 text-xl font-bold text-neutral-950 dark:text-white;
+    @apply mt-6 mb-1 text-lg font-bold text-neutral-950 dark:text-white;
   }
 
   .doc h4 {
-    @apply mt-8 mb-2 font-bold text-neutral-950 dark:text-white;
+    @apply mt-5 mb-1 font-bold text-neutral-950 dark:text-white;
   }
 
   .doc p,
@@ -106,7 +106,7 @@
   .doc ol,
   .doc table,
   .doc blockquote {
-    @apply mb-5;
+    @apply mb-3;
   }
 
   .doc ul {
@@ -118,7 +118,7 @@
   }
 
   .doc li {
-    @apply mb-2;
+    @apply mb-1;
   }
 
   .doc strong {
@@ -126,7 +126,7 @@
   }
 
   .doc code {
-    @apply rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-base text-neutral-900 dark:bg-neutral-800 dark:text-neutral-100;
+    @apply rounded bg-neutral-100 px-1.5 py-0.5 font-mono text-sm text-neutral-900 dark:bg-neutral-800 dark:text-neutral-100;
   }
 
   .doc blockquote {
@@ -134,12 +134,12 @@
   }
 
   .doc table {
-    @apply w-full border-collapse text-base;
+    @apply w-full border-collapse text-sm;
   }
 
   .doc th,
   .doc td {
-    @apply border-b border-neutral-200 py-2 pr-4 text-left align-top dark:border-neutral-800;
+    @apply border-b border-neutral-200 py-1.5 pr-4 text-left align-top dark:border-neutral-800;
   }
 
   .doc th {
@@ -152,6 +152,116 @@
   }
 
   .doc .convention-id {
-    @apply mr-2 font-mono text-base font-bold text-brand-700 dark:text-brand-400;
+    @apply mr-2 font-mono text-sm font-bold text-brand-700 dark:text-brand-400;
+  }
+}
+
+/* ==========================================================================
+   LIFECYCLE
+   The life of a share as a stepper: a line with a circle at each step.
+   Markup: _includes/lifecycle.html. State lives in data-state on each step
+   (done, current, upcoming), so the server render and the protocol page's
+   scroll highlighting share one set of styles.
+   State is never color alone: done shows a check, current a ring, and each
+   carries screen-reader text.
+   ========================================================================== */
+
+@layer components {
+  .lifecycle {
+    @apply list-none;
+  }
+
+  .lc-step {
+    @apply relative pb-5 last:pb-0;
+  }
+
+  .lc-line {
+    @apply absolute top-8 bottom-0 left-[15px] w-0.5 bg-neutral-300 dark:bg-neutral-700;
+  }
+
+  .lc-step:last-child .lc-line {
+    @apply hidden;
+  }
+
+  .lc-link {
+    @apply flex gap-3 rounded-sm text-inherit no-underline;
+  }
+
+  .lc-dot {
+    @apply relative z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-neutral-500 bg-white font-mono text-sm font-bold text-neutral-700 dark:border-neutral-400 dark:bg-neutral-950 dark:text-neutral-300;
+  }
+
+  .lc-check {
+    @apply hidden;
+  }
+
+  .lc-text {
+    @apply flex flex-col pt-1;
+  }
+
+  .lc-name {
+    @apply font-bold text-neutral-950 underline decoration-transparent decoration-2 underline-offset-4 dark:text-white;
+  }
+
+  .lc-link:hover .lc-name {
+    @apply decoration-brand-500;
+  }
+
+  .lc-desc {
+    @apply text-sm/5 text-neutral-600 dark:text-neutral-400;
+  }
+
+  .lc-conventions {
+    @apply mt-0.5 font-mono text-xs text-neutral-600 dark:text-neutral-400;
+  }
+
+  .lc-branch {
+    @apply mt-1.5 ml-11 block w-fit border-l-2 border-dashed border-neutral-400 pl-2 text-xs/5 text-neutral-600 no-underline hover:underline dark:border-neutral-600 dark:text-neutral-400;
+  }
+
+  .lc-step[data-state="done"] .lc-dot {
+    @apply border-brand-500 bg-brand-500 text-black;
+  }
+
+  .lc-step[data-state="done"] .lc-num {
+    @apply hidden;
+  }
+
+  .lc-step[data-state="done"] .lc-check {
+    @apply inline;
+  }
+
+  .lc-step[data-state="done"] .lc-line {
+    @apply bg-brand-500;
+  }
+
+  .lc-step[data-state="current"] .lc-dot {
+    @apply border-brand-500 text-brand-700 ring-4 ring-brand-100 dark:text-brand-400 dark:ring-brand-900;
+  }
+
+  /* From md up, the horizontal layout becomes a row: circles on one line,
+     a short description under each. */
+  .lifecycle-horizontal {
+    @apply md:grid md:grid-cols-7 md:gap-2;
+  }
+
+  .lifecycle-horizontal .lc-step {
+    @apply md:pb-0;
+  }
+
+  .lifecycle-horizontal .lc-line {
+    @apply md:top-[15px] md:bottom-auto md:left-1/2 md:h-0.5 md:w-[calc(100%+0.5rem)];
+  }
+
+  .lifecycle-horizontal .lc-link {
+    @apply md:flex-col md:items-center md:gap-2 md:text-center;
+  }
+
+  .lifecycle-horizontal .lc-text {
+    @apply md:pt-0;
+  }
+
+  .lifecycle-horizontal .lc-branch {
+    @apply md:mx-auto md:mt-2 md:border-t-2 md:border-l-0 md:pt-1 md:pl-0 md:text-center;
   }
 }

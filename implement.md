@@ -19,7 +19,7 @@ You don't need software to follow the protocol, and you don't need permission to
 1. **Read the [protocol](/protocol/).**
    It is short, and every convention has an id you can point to.
 2. **Map your steps to the life of a share.**
-   Name the step in your app, form or process that matches each of offer, ask, agree, hand over, use, return and close.
+   Name the step in your app, form or process that matches each of offer, ask, agree, share, use, return and close.
 3. **Check each convention.**
    For each one, note whether you follow it, follow it in part, or don't yet.
    Start with every **must**.
@@ -34,7 +34,7 @@ You don't need software to follow the protocol, and you don't need permission to
 ### Without software
 
 A group can follow the protocol with a shared spreadsheet or a printed sheet by the door.
-Keep one row per share with the thing, the borrower, the dates, and a condition note at hand-off and return.
+Keep one row per share with the thing, the borrower, the dates, and a condition note when it is shared and when it is returned.
 Keep the sheet where only the people who run it can see who borrowed what (NS-24).
 
 ## What conforming means
@@ -62,7 +62,7 @@ If a convention doesn't fit how real neighbors lend, or something important is m
 
 A good proposal:
 
-- names the convention it changes by id, for example "NS-14: hand-offs with a lockbox", or says "New convention";
+- names the convention it changes by id, for example "NS-14: sharing through a lockbox", or says "New convention";
 - describes the situation from the point of view of a lender or a borrower;
 - suggests wording;
 - says where you've tried it, if you have.
@@ -85,15 +85,22 @@ To add yours, open an issue with its name, link, what kind of project it is, and
 One of those choices is to lend an item to the people nearby.
 
 Status: implements NeighborShed v0.1 in part.
-As described by the Qart project:
+As checked against Qart's code by the Qart project, November 2026:
 
 - Lending is off until an owner turns it on for an item, and can be paused (NS-1).
 - Each item can carry a care note borrowers read before asking (NS-3), and a quantity with a live count of how many are free (NS-5).
 - A request says how many, roughly when, and a note (NS-6).
-- The owner approves or declines each request; for an organization's items, its owners and admins decide (NS-7, NS-8).
-- The pickup note is shown only to an approved borrower (NS-13).
-- Either side can mark an item returned (NS-19).
-- Neighbors are found by a coarse area of about a kilometer; the exact point is never stored (NS-23).
+- The owner approves or declines each request, with no reason needed; for an organization's items, its owners and admins decide (NS-7, NS-8).
+- The pickup note is shown only to the borrower, once the request is approved, and stays visible while the item is out (NS-13).
+- Neighbors are found by a coarse area of about a kilometer; the exact point is never stored or logged (NS-23).
 - A loan is seen only by its two sides (NS-24).
 
-Not yet: vouching (NS-25), program loan terms (NS-11), return reminders (NS-19), deposits (NS-12), and tips or contributions (NS-29 to NS-33).
+In part:
+
+- Both sides see the same loan record, with dates, quantity and notes, but no other agreed terms (NS-10).
+- Either side can mark an item returned, and the record shows who did; the other side doesn't confirm it yet, and there are no return reminders (NS-19).
+- People can delete items or stop sharing at any time; there is no export of lending history yet (NS-26).
+
+Not yet: condition notes at the offer and when shared (NS-2, NS-15), a nudge to answer in good time (NS-9), program loan terms (NS-11), deposits (NS-12), vouching (NS-25), and tips or contributions (NS-29 to NS-33).
+
+Not claimed: the conventions about how people behave (NS-4, NS-14, NS-16 to NS-18, NS-20 to NS-22), NS-27, pending an accessibility review, and NS-28.

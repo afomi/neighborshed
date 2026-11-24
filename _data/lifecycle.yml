@@ -1,0 +1,41 @@
+# The life of a share: one entry per step, in order.
+# Used by _includes/lifecycle.html on the home page and the protocol page.
+# anchor: the protocol section this step links to.
+# conventions: the range of conventions that section holds.
+- key: offer
+  name: Offer
+  line: Let neighbors know what you can lend.
+  anchor: offer
+  conventions: NS-1 to NS-5
+- key: ask
+  name: Ask
+  line: Say what you need, when, and why.
+  anchor: ask
+  conventions: NS-6 to NS-9
+- key: agree
+  name: Agree
+  line: The owner says yes or no.
+  anchor: agree
+  conventions: NS-10 to NS-12
+  branch: Or it stops here, with a no or a change of plans. No hard feelings.
+  branch_anchor: ns-8
+- key: share
+  name: Share
+  line: Meet up and check it over together.
+  anchor: share
+  conventions: NS-13 to NS-15
+- key: use
+  name: Use
+  line: Take good care of it. Call if plans change.
+  anchor: use
+  conventions: NS-16 to NS-17
+- key: return
+  name: Return
+  line: Bring it back on time, in good shape.
+  anchor: return
+  conventions: NS-18 to NS-19
+- key: close
+  name: Close
+  line: Sort out anything that went wrong. All done.
+  anchor: when-something-goes-wrong
+  conventions: NS-20 to NS-22

@@ -3,6 +3,7 @@ layout: page
 title: "The NeighborShed protocol"
 kicker: "Version 0.1, draft"
 permalink: /protocol/
+lifecycle_nav: true
 description: "A readable spec for lending and borrowing among neighbors: roles, the life of a share, and conventions with stable ids (NS-1 to NS-33)."
 lede: "The conventions that make lending between neighbors work, written so people can follow them and apps can implement them."
 ---
@@ -55,8 +56,8 @@ A **share** is one loan of one or more units of a thing, from the ask to the clo
 |---|---|---|
 | Offer | offered | A lender shows a thing to a circle. |
 | Ask | requested | A borrower asks for it, with dates and a note. |
-| Agree | agreed, or declined | The lender says yes or no. The borrower may cancel until the hand-over. |
-| Hand over | out | The thing changes hands, and both note its condition. |
+| Agree | agreed, or declined | The lender says yes or no. The borrower may cancel until the thing is shared. |
+| Share | out | The lender shares the thing with the borrower, and both note its condition. |
 | Use | out | The borrower uses it as agreed. |
 | Return | returned | The thing comes back, and both confirm it. |
 | Close | closed | Any problem is settled, and the share is done. |
@@ -117,7 +118,7 @@ For an organization's things, only the people the organization authorizes may de
 {: #ns-8 .convention}
 
 A lender may decline any request without giving a reason.
-A borrower may cancel a request any time before the hand-over.
+A borrower may cancel a request any time before the thing is shared.
 An implementation must not penalize either side for declining or cancelling, and must not show a decline to anyone outside the share.
 
 ### <span class="convention-id">NS-9</span> Answer in good time
@@ -151,26 +152,28 @@ A deposit should be returned promptly after a clean return.
 A deposit is not a fee: it is held against damage or loss and comes back in full when the thing does.
 Thanks and contributions, which are always optional, are covered in [Gratitude and contributions](#gratitude-and-contributions).
 
-## Hand over
+## Share
+
+<div id="hand-over"></div>
 
 ### <span class="convention-id">NS-13</span> Pickup details go only to the agreed borrower
 {: #ns-13 .convention}
 
 Where to pick a thing up, such as an address, a side gate or a lockbox code, is shared only once a lender agrees, and only with that borrower.
 
-### <span class="convention-id">NS-14</span> Hand-offs should feel safe
+### <span class="convention-id">NS-14</span> Share somewhere that feels safe
 {: #ns-14 .convention}
 
-Lender and borrower agree on a hand-off both are comfortable with: a doorstep, a porch, a public place, or daylight hours.
+Lender and borrower agree on a place and time both are comfortable with: a doorstep, a porch, a public place, or daylight hours.
 Either side may bring someone along.
-Either side may call off a hand-off that doesn't feel right, with no penalty and no explanation required.
+Either side may call off a meeting that doesn't feel right, with no penalty and no explanation required.
 
-### <span class="convention-id">NS-15</span> Note the condition at hand-off
+### <span class="convention-id">NS-15</span> Note the condition when you share
 {: #ns-15 .convention}
 
-At the hand-off, both sides confirm the thing matches its description, or note what differs.
+When the thing is shared, both sides confirm it matches its description, or note what differs.
 A quick photo is enough.
-The implementation should record when the thing changed hands.
+The implementation should record when it was shared.
 
 ## Use
 
@@ -209,7 +212,7 @@ Reminders go only to the two sides of the share, never to the circle.
 
 If a thing is damaged or lost, the borrower tells the lender promptly.
 The two agree on a fair remedy: repair, a replacement of similar age and condition, or its fair value.
-The baseline is the condition noted at the offer and the hand-off (NS-2, NS-15), not the price of a new one.
+The baseline is the condition noted at the offer and when it was shared (NS-2, NS-15), not the price of a new one.
 
 ### <span class="convention-id">NS-21</span> Ask for help, don't punish
 {: #ns-21 .convention}

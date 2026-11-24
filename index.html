@@ -1,166 +1,233 @@
 ---
 layout: default
 title: "NeighborShed"
-description: "An open social protocol for lending and borrowing among neighbors: the shared expectations that make neighborhood sharing work."
+description: "Simple ground rules for lending and borrowing among neighbors, free for any group or app to use."
 ---
 
 <section class="border-b border-neutral-200 dark:border-neutral-800">
-  <div class="mx-auto max-w-5xl px-6 py-20 sm:py-28">
-    <p class="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-brand-700 dark:text-brand-400">
-      An open protocol, version {{ site.protocol_version }} ({{ site.protocol_status }})
-    </p>
-    <h1 class="max-w-3xl text-5xl font-bold tracking-tight text-neutral-950 sm:text-6xl dark:text-white">
-      Share what you have with the people next door.
-    </h1>
-    <p class="mt-8 max-w-2xl text-xl/8 text-neutral-700 dark:text-neutral-300">
-      Your street already has the ladder, the mower and the folding tables it needs.
-      NeighborShed is a shared set of expectations for lending them to each other: how to offer, ask, hand over, return, and make it right when something goes wrong.
-    </p>
-    <div class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
-      <a
-        href="{{ "/protocol/" | relative_url }}"
-        class="rounded bg-brand-500 px-5 py-3 font-bold text-black no-underline hover:bg-brand-400"
-      >
-        Read the protocol
-      </a>
-      <a
-        href="{{ "/implement/" | relative_url }}"
-        class="font-bold"
-      >
-        Implement it in your app or program
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="mx-auto max-w-5xl px-6 py-16">
-  <div class="grid gap-12 md:grid-cols-2">
-    <div>
-      <h2 class="text-2xl font-bold tracking-tight text-neutral-950 dark:text-white">
-        Sharing runs on trust, and trust runs on clear expectations
-      </h2>
-      <div class="mt-4 space-y-4 text-lg/8 text-neutral-700 dark:text-neutral-300">
-        <p>
-          The scarce thing in a neighborhood is rarely the tool.
-          It is the confidence that a loan will go well: that the drill comes back charged, that a late return gets a heads-up, and that a broken blade leads to a fair conversation instead of a feud.
-        </p>
-        <p>
-          When everyone knows the conventions, a yes gets easy.
-          When the conventions are left unsaid, people stop lending.
-        </p>
+  <div class="mx-auto grid max-w-6xl gap-8 px-6 py-10 lg:grid-cols-12 lg:items-center lg:gap-10 lg:py-12">
+    <div class="lg:col-span-8">
+      <h1 class="text-4xl font-bold tracking-tight text-neutral-950 lg:text-5xl dark:text-white">
+        Share what you have with neighbors.
+      </h1>
+      <p class="mt-4 text-lg/7 text-neutral-700 dark:text-neutral-300">
+        Your street already has a ladder, a mower and some folding tables.
+        NeighborShed is a simple set of ground rules for lending them to each other.
+        It covers how to ask, how to give things back, and what to do if something breaks.
+      </p>
+      <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3">
+        <a
+          href="{{ "/protocol/" | relative_url }}"
+          class="rounded bg-brand-500 px-4 py-2 font-bold text-black no-underline hover:bg-brand-400"
+        >
+          Read the ground rules
+        </a>
+        <a
+          href="{{ "/implement/" | relative_url }}"
+          class="font-bold"
+        >
+          Use them in your group or app
+        </a>
       </div>
     </div>
-    <div>
-      <h2 class="text-2xl font-bold tracking-tight text-neutral-950 dark:text-white">
-        A practice first, then software
-      </h2>
-      <div class="mt-4 space-y-4 text-lg/8 text-neutral-700 dark:text-neutral-300">
-        <p>
-          The protocol works on paper, in a group chat, in a city equipment program, or inside an app.
-          Each convention has a short, stable id such as
-          <a href="{{ "/protocol/#ns-7" | relative_url }}">NS-7</a>,
-          so a project can say exactly which ones it follows.
-        </p>
-        <p>
-          It is open and free to adopt.
-          The aim is a pattern many apps and groups can share, so a neighbor who learns it once can lend anywhere.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section
-  class="border-y border-neutral-200 bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-900"
-  aria-labelledby="lifecycle-heading"
->
-  <div class="mx-auto max-w-5xl px-6 py-16">
-    <h2
-      id="lifecycle-heading"
-      class="text-2xl font-bold tracking-tight text-neutral-950 dark:text-white"
-    >
-      The life of a share
-    </h2>
-    <p class="mt-3 max-w-2xl text-lg/8 text-neutral-700 dark:text-neutral-300">
-      Every loan moves through the same steps, whatever tool keeps track of it.
-    </p>
-    <ol class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      <li>
-        <p class="font-mono text-sm font-bold text-brand-700 dark:text-brand-400">01 Offer</p>
-        <p class="mt-2 text-neutral-800 dark:text-neutral-200">
-          Choose what you'll lend and who can see it.
-          Describe its condition and how to care for it.
-        </p>
-      </li>
-      <li>
-        <p class="font-mono text-sm font-bold text-brand-700 dark:text-brand-400">02 Ask</p>
-        <p class="mt-2 text-neutral-800 dark:text-neutral-200">
-          Say what you need, how many, when, and what it's for.
-        </p>
-      </li>
-      <li>
-        <p class="font-mono text-sm font-bold text-brand-700 dark:text-brand-400">03 Agree</p>
-        <p class="mt-2 text-neutral-800 dark:text-neutral-200">
-          The lender decides each loan.
-          No is a complete answer.
-        </p>
-      </li>
-      <li>
-        <p class="font-mono text-sm font-bold text-brand-700 dark:text-brand-400">04 Hand over</p>
-        <p class="mt-2 text-neutral-800 dark:text-neutral-200">
-          Meet somewhere you're both comfortable, and note the condition together.
-        </p>
-      </li>
-      <li>
-        <p class="font-mono text-sm font-bold text-brand-700 dark:text-brand-400">05 Use and return</p>
-        <p class="mt-2 text-neutral-800 dark:text-neutral-200">
-          Use it as agreed, speak up early if plans change, and bring it back as you found it.
-        </p>
-      </li>
-      <li>
-        <p class="font-mono text-sm font-bold text-brand-700 dark:text-brand-400">06 Close</p>
-        <p class="mt-2 text-neutral-800 dark:text-neutral-200">
-          Both sides confirm it's back.
-          If something went wrong, make it right together.
-        </p>
-      </li>
-    </ol>
-    <blockquote class="mt-12 max-w-2xl border-l-4 border-brand-500 pl-5 text-xl/8 text-neutral-900 dark:text-neutral-100">
+    <blockquote class="border-l-4 border-brand-500 pl-4 text-lg/7 text-neutral-900 lg:col-span-4 dark:text-neutral-100">
       <p>
-        Treat every tool with care.
-        Communicate, return on time, and if you break it, work with the owner to make it right.
+        Take good care of what you borrow.
+        Keep in touch, bring it back on time, and if it breaks, work it out with the owner.
       </p>
     </blockquote>
   </div>
 </section>
 
-<section class="mx-auto max-w-5xl px-6 py-16">
-  <div class="grid gap-12 md:grid-cols-2">
-    <div>
-      <h2 class="text-2xl font-bold tracking-tight text-neutral-950 dark:text-white">
-        Built to be adopted
+<section
+  class="border-b border-neutral-200 bg-neutral-50 dark:border-neutral-800 dark:bg-neutral-900"
+  aria-labelledby="lifecycle-heading"
+>
+  <div class="mx-auto max-w-6xl px-6 py-10">
+    <div class="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+      <h2
+        id="lifecycle-heading"
+        class="text-2xl font-bold tracking-tight text-neutral-950 dark:text-white"
+      >
+        How a loan works
       </h2>
-      <div class="mt-4 space-y-4 text-lg/8 text-neutral-700 dark:text-neutral-300">
+      <p class="text-neutral-600 dark:text-neutral-400">
+        Every loan goes through the same seven steps.
+        In this example, the mower is out with a neighbor right now.
+      </p>
+    </div>
+    <div class="mt-8">
+      {% include lifecycle.html
+        current="use"
+        layout="horizontal"
+        label="How a loan works: the mower example"
+      %}
+    </div>
+  </div>
+</section>
+
+<section
+  class="mx-auto max-w-6xl px-6 py-10"
+  aria-labelledby="example-heading"
+>
+  <h2
+    id="example-heading"
+    class="text-2xl font-bold tracking-tight text-neutral-950 dark:text-white"
+  >
+    One mower, two neighbors
+  </h2>
+  <div class="mt-6 grid gap-6 md:grid-cols-2">
+    <figure class="grid grid-cols-[8rem_1fr] gap-4 sm:grid-cols-[11rem_1fr] lg:grid-cols-[13rem_1fr]">
+      <img
+        src="{{ "/assets/img/lawnmower.jpg" | relative_url }}"
+        alt="A red lawnmower parked in a wooden garden shed, ready to lend"
+        width="758"
+        height="1024"
+        loading="lazy"
+        class="aspect-[3/4] w-full rounded-lg border border-neutral-200 object-cover dark:border-neutral-800"
+      >
+      <figcaption>
+        <p class="font-mono text-xs font-bold uppercase tracking-widest text-brand-700 dark:text-brand-400">
+          An item to share
+        </p>
+        <ol class="mt-2 list-decimal space-y-1.5 pl-5 text-sm/6 text-neutral-800 lg:text-base/7 dark:text-neutral-200">
+          <li>
+            Take a picture and create your item.
+          </li>
+          <li>
+            Describe it and indicate condition.
+          </li>
+          <li>
+            Add a basic care note, like “Clean the blade and top up the gas.”
+          </li>
+          <li>
+            Pick who can see your mower.
+          </li>
+          <li>
+            Approve each request.
+            It's always your call.
+          </li>
+          <li>
+            Lend it, then check it back in when it comes home.
+          </li>
+        </ol>
+      </figcaption>
+    </figure>
+    <figure class="grid grid-cols-[8rem_1fr] gap-4 sm:grid-cols-[11rem_1fr] lg:grid-cols-[13rem_1fr]">
+      <img
+        src="{{ "/assets/img/mowing-lawn.jpg" | relative_url }}"
+        alt="A neighbor mowing their lawn with the borrowed red mower"
+        width="761"
+        height="1024"
+        loading="lazy"
+        class="aspect-[3/4] w-full rounded-lg border border-neutral-200 object-cover dark:border-neutral-800"
+      >
+      <figcaption>
+        <p class="font-mono text-xs font-bold uppercase tracking-widest text-brand-700 dark:text-brand-400">
+          An item borrowed
+        </p>
+        <ol class="mt-2 list-decimal space-y-1.5 pl-5 text-sm/6 text-neutral-800 lg:text-base/7 dark:text-neutral-200">
+          <li>
+            Request to borrow an item.
+          </li>
+          <li>
+            Wait for a yes.
+            Then you'll get the pickup details.
+          </li>
+          <li>
+            Use it with respect, and follow the care note.
+          </li>
+          <li>
+            Bring it back on time, in good shape, and say thanks.
+          </li>
+        </ol>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section
+  class="border-y border-brand-100 bg-brand-50 dark:border-brand-900 dark:bg-neutral-900"
+  aria-labelledby="qart-heading"
+>
+  <div class="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-8 md:flex-row md:items-center md:justify-between">
+    <div class="max-w-2xl">
+      <h2
+        id="qart-heading"
+        class="text-2xl font-bold tracking-tight text-neutral-950 dark:text-white"
+      >
+        Ready to share what's in your shed?
+      </h2>
+      <p class="mt-2 text-lg/7 text-neutral-800 dark:text-neutral-200">
+        Qart is an app that follows these ground rules.
+        List your things, keep them private until you choose to share, and lend to people nearby.
+        Each loan is tracked from the ask to the return.
+      </p>
+    </div>
+    <div class="flex shrink-0 flex-col items-start gap-3">
+      <a
+        href="https://qart.app"
+        class="rounded bg-brand-500 px-5 py-3 text-lg font-bold text-black no-underline hover:bg-brand-400"
+      >
+        Start lending with Qart
+      </a>
+      <a
+        href="{{ "/implement/#implementations" | relative_url }}"
+        class="text-sm font-bold"
+      >
+        Or see other apps and groups
+      </a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="mx-auto grid max-w-6xl gap-8 px-6 py-10 md:grid-cols-3">
+    <div>
+      <h2 class="text-lg font-bold tracking-tight text-neutral-950 dark:text-white">
+        Lending works when everyone knows the rules
+      </h2>
+      <div class="mt-2 space-y-3 text-base/7 text-neutral-700 dark:text-neutral-300">
         <p>
-          If you run a library of things, a tenants' association, a city loan program, or an app with a lending feature, you're invited to implement the protocol and list your project.
-          Changes are proposed in the open, and the protocol improves as more groups use it.
+          Most streets have plenty of tools.
+          What's missing is trust that a loan will go well.
+          That the drill comes back charged.
+          That you'll hear if it's running late.
+          That a broken blade leads to a fair talk, not a feud.
         </p>
         <p>
-          <a href="{{ "/implement/" | relative_url }}">How to implement it</a>
+          When everyone knows the rules, saying yes is easy.
         </p>
       </div>
     </div>
     <div>
-      <h2 class="text-2xl font-bold tracking-tight text-neutral-950 dark:text-white">
-        Lend with it today
+      <h2 class="text-lg font-bold tracking-tight text-neutral-950 dark:text-white">
+        Works with or without an app
       </h2>
-      <div class="mt-4 space-y-4 text-lg/8 text-neutral-700 dark:text-neutral-300">
+      <div class="mt-2 space-y-3 text-base/7 text-neutral-700 dark:text-neutral-300">
         <p>
-          <a href="https://qart.app">Qart</a> is one implementation.
-          It keeps an inventory of your things, private until you choose to show one, and lets you lend an item to the people around you, with each loan tracked from ask to return.
+          You can follow these rules on paper, in a group chat, in a city program, or in an app.
+          Each rule has a short number, like
+          <a href="{{ "/protocol/#ns-7" | relative_url }}">NS-7</a>,
+          so a group can point to the ones it follows.
         </p>
         <p>
-          <a href="{{ "/implement/#implementations" | relative_url }}">See all implementations</a>
+          They're free for anyone to use.
+        </p>
+      </div>
+    </div>
+    <div>
+      <h2 class="text-lg font-bold tracking-tight text-neutral-950 dark:text-white">
+        Bring them to your group
+      </h2>
+      <div class="mt-2 space-y-3 text-base/7 text-neutral-700 dark:text-neutral-300">
+        <p>
+          Do you run a tool library, a neighborhood group, a city loan program, or an app?
+          You're welcome to use these rules and add your name to the list.
+          Anyone can suggest a change.
+        </p>
+        <p>
+          <a href="{{ "/implement/" | relative_url }}">How to get started</a>
         </p>
       </div>
     </div>
