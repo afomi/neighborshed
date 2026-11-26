@@ -226,15 +226,15 @@
   }
 
   .lc-desc {
-    @apply text-sm/5 text-neutral-600 dark:text-neutral-400;
+    @apply text-base/6 text-neutral-600 md:text-sm/5 lg:text-base/6 dark:text-neutral-400;
   }
 
   .lc-conventions {
-    @apply mt-0.5 font-mono text-xs text-neutral-600 dark:text-neutral-400;
+    @apply mt-0.5 font-mono text-sm text-neutral-600 dark:text-neutral-400;
   }
 
   .lc-branch {
-    @apply mt-1.5 ml-11 block w-fit border-l-2 border-dashed border-neutral-400 pl-2 text-xs/5 text-neutral-600 no-underline hover:underline dark:border-neutral-600 dark:text-neutral-400;
+    @apply mt-1.5 ml-11 block w-fit border-l-2 border-dashed border-neutral-400 pl-2 text-sm/6 text-neutral-600 no-underline hover:underline dark:border-neutral-600 dark:text-neutral-400;
   }
 
   .lc-step[data-state="done"] .lc-dot {
