@@ -1,43 +1,36 @@
-{% assign nav_links = "/protocol/|The protocol,/implement/|Implement it,/about/|About" | split: "," %}
 <header class="border-b border-neutral-200 dark:border-neutral-800">
   <nav
     class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-8 gap-y-2 px-6 py-3"
     aria-label="Main"
   >
-    <a
-      href="{{ "/" | relative_url }}"
-      class="flex items-center gap-x-3 text-lg font-bold no-underline"
-    >
-      <img
-        class="h-7 w-7"
-        src="{{ "/assets/img/mark.svg" | relative_url }}"
-        alt=""
-        width="32"
-        height="32"
+    <div class="flex items-center gap-x-6">
+      <a
+        href="{{ "/" | relative_url }}"
+        class="flex items-center gap-x-3 text-lg font-bold no-underline"
       >
-      <span>{{ site.title }}</span>
-    </a>
-    <ul class="flex flex-wrap items-center gap-x-5 gap-y-1 text-base font-bold">
-      {% for link in nav_links %}
-        {% assign parts = link | split: "|" %}
-        <li>
-          <a
-            href="{{ parts[0] | relative_url }}"
-            class="{% if page.url == parts[0] %}decoration-4{% else %}no-underline hover:underline{% endif %}"
-            {% if page.url == parts[0] %}aria-current="page"{% endif %}
-          >
-            {{ parts[1] }}
-          </a>
-        </li>
-      {% endfor %}
-      <li>
-        <a
-          href="{{ site.repository }}"
-          class="no-underline hover:underline"
+        <img
+          class="h-7 w-7"
+          src="{{ "/assets/img/mark.svg" | relative_url }}"
+          alt=""
+          width="32"
+          height="32"
         >
-          GitHub
-        </a>
-      </li>
-    </ul>
+        <span>{{ site.title }}</span>
+      </a>
+      <a
+        href="{{ "/about/" | relative_url }}"
+        class="text-base font-bold {% if page.url == "/about/" %}decoration-4{% else %}no-underline hover:underline{% endif %}"
+        {% if page.url == "/about/" %}aria-current="page"{% endif %}
+      >
+        About
+      </a>
+    </div>
+    <a
+      href="{{ site.repository }}"
+      class="text-base font-bold no-underline hover:underline"
+      data-exit="github"
+    >
+      GitHub
+    </a>
   </nav>
 </header>
