@@ -45,7 +45,7 @@ The full license is in the [LICENSE file](https://github.com/afomi/neighborshed/
 ## Privacy
 {: #privacy}
 
-This site uses Google Analytics to count visits and see which pages are read.
+This site counts visits and which pages are read.
 It shows no ads and sells no data.
 The protocol pages collect nothing else: there are no forms, accounts or sign-ups here.
 

@@ -7,6 +7,10 @@ description: "An open social protocol for lending and borrowing among neighbors:
 
 lang: "en-US"
 
+# Picture shown when a page is shared on Facebook and elsewhere.
+image: "/assets/img/share-card.jpg"
+image_alt: "Share what you have with neighbors. A garden shed with its doors open, holding a ladder, a shovel and a mower. neighborshed.app"
+
 protocol_version: "0.1"
 protocol_status: "draft"
 

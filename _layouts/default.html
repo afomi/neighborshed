@@ -37,10 +37,29 @@
       property="og:url"
       content="{{ page.url | absolute_url }}"
     >
-    {% if page.image %}
+    {% assign share_image = page.image | default: site.image %}
+    {% if share_image %}
     <meta
       property="og:image"
-      content="{{ page.image | absolute_url }}"
+      content="{{ share_image | absolute_url }}"
+    >
+    {% unless page.image %}
+    <meta
+      property="og:image:width"
+      content="1200"
+    >
+    <meta
+      property="og:image:height"
+      content="630"
+    >
+    {% endunless %}
+    <meta
+      property="og:image:alt"
+      content="{{ page.image_alt | default: site.image_alt }}"
+    >
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
     >
     {% endif %}
     <link
